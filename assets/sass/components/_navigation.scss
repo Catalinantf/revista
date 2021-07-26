@@ -1,0 +1,51 @@
+/* Navigation */
+.navigation{
+    background-color: $white;
+    padding: 0 2%;
+    border-bottom: 1px solid $border-gray;
+    position:relative;
+}
+
+.nav-logo {
+    font-weight: $bold;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.nav-list {
+    position: absolute;
+    top:25%;
+    right:2%;
+    li{
+        display: inline-block;
+        font-weight: $bold;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+.nav-list ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.input-menu {
+    border-radius: 30px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px){
+    #nav-hide {
+        display: none;
+    }
+    h1 {
+        font-size: $medium;
+        padding-top:4%;
+    }
+    .nav-list {
+        font-size: $small;
+    }
+}

@@ -1,0 +1,204 @@
+/*Base Styles*/
+body {
+  font-family: monospace;
+}
+
+/*Reset*/
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2, h3, h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+a {
+  font-size: 1rem;
+}
+
+li, p {
+  font-size: 0.7rem;
+}
+
+.main-section {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-gap: 3% 1%;
+  padding: 5%;
+}
+
+.main-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1% 1%;
+}
+.main-column p {
+  text-align: justify;
+}
+.main-column img {
+  width: 100%;
+}
+
+/* Medium devices (laptops/desktops, < 992px) */
+@media only screen and (max-width: 992px) {
+  .main-section {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-gap: 3% 1%;
+    padding: 5%;
+  }
+
+  .main-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1% 1%;
+  }
+  .main-column p {
+    text-align: justify;
+  }
+  .main-column img {
+    width: 100%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .main-section {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 3% 1%;
+    padding: 5%;
+  }
+
+  .main-column {
+    display: block;
+  }
+  .main-column p {
+    text-align: justify;
+  }
+  .main-column img {
+    width: 100%;
+    height: 50vw;
+  }
+
+  .aside-column {
+    display: none;
+  }
+}
+/* Header Layout */
+.tags-item {
+  border-top: solid 2px gray;
+  border-bottom: solid 2px gray;
+  padding: 0;
+  margin: 0;
+}
+.tags-item li {
+  padding: 1%;
+  background-color: steelblue;
+  color: white;
+  list-style: none;
+}
+
+.tags-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 1% 1%;
+}
+
+/*Form Layout*/
+.contact-form {
+  background-color: #dcdcdc;
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+/*Footer Styles*/
+.footer {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Buttons */
+.group button {
+  display: inline-block;
+  border-width: 0;
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  background-color: coral;
+  color: white;
+}
+
+/* Inputs */
+.group input {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+
+/* Navigation */
+.navigation {
+  background-color: white;
+  padding: 0 2%;
+  border-bottom: 1px solid gray;
+  position: relative;
+}
+
+.nav-logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.nav-list {
+  position: absolute;
+  top: 25%;
+  right: 2%;
+}
+.nav-list li {
+  display: inline-block;
+  font-weight: bold;
+}
+.nav-list li a {
+  text-decoration: none;
+}
+
+.nav-list ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.input-menu {
+  border-radius: 30px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  #nav-hide {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1rem;
+    padding-top: 4%;
+  }
+
+  .nav-list {
+    font-size: 0.7rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
